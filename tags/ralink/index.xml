@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ralink on Chieh Blog</title>
-    <link>http://do-chieh.github.io/tags/ralink/</link>
+    <link>https://do-chieh.github.io/tags/ralink/</link>
     <description>Recent content in Ralink on Chieh Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 07 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://do-chieh.github.io/tags/ralink/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://do-chieh.github.io/tags/ralink/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ralink SDK Package 集成</title>
-      <link>http://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</link>
+      <link>https://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</link>
       <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</guid>
+      <guid>https://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</guid>
       <description>目标：将一个c文件集成到Ralink SDK的固件中
 已知一个sysmonitor.c用于系统监控，检测cpu，ram等指标，并将系统运行信息转为json格式，回传到服务器。
 $ ls $ sysmonitor.c  把要集成的程序移动到相应位置

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dbms on Chieh Blog</title>
-    <link>http://do-chieh.github.io/tags/dbms/</link>
+    <link>https://do-chieh.github.io/tags/dbms/</link>
     <description>Recent content in Dbms on Chieh Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 31 Mar 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://do-chieh.github.io/tags/dbms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://do-chieh.github.io/tags/dbms/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MySQL学习</title>
-      <link>http://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</link>
+      <link>https://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>https://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</guid>
       <description>Install MySQL  可在安装过程中初始化root密码
   $ sudo apt-get install mysql-server
 $ sudo apt-get install masql-client
