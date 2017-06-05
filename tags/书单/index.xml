@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>书单 on Chieh Blog</title>
+    <link>http://do-chieh.github.io/tags/%E4%B9%A6%E5%8D%95/</link>
+    <description>Recent content in 书单 on Chieh Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 28 Apr 2016 14:54:40 +0000</lastBuildDate>
+    
+	<atom:link href="http://do-chieh.github.io/tags/%E4%B9%A6%E5%8D%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>编程书单</title>
+      <link>http://do-chieh.github.io/post/2016/2016-04-28-%E7%BC%96%E7%A8%8B%E4%B9%A6%E7%B1%8D/</link>
+      <pubDate>Thu, 28 Apr 2016 14:54:40 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2016/2016-04-28-%E7%BC%96%E7%A8%8B%E4%B9%A6%E7%B1%8D/</guid>
+      <description>语言无关  MySQL NoSQL PostgreSQL Web  WEB服务器 其它 函数式概念 分布式系统 在线教育 大数据 操作系统 数据库 智能系统 正则表达式 版本控制 程序员杂谈 管理和监控 编程艺术 编译原理 编辑器 计算机图形学 设计模式 软件开发方法 项目相关  语言相关  Android AWK C/C++ CoffeeScript Dart Elasticsearch Erlang Fortran Golang Haskell HTML / CSS HTTP iOS Java JavaScript LaTeX LISP Lua Markdown Node.js Perl PHP Python R reStructuredText Ruby Scala Scheme Shell Swift Vim Visual Prolog   语言无关 MySQL  21分钟MySQL入门教程 MySQL索引背后的数据结构及算法原理  NoSQL  Disque 使用教程 Neo4j .</description>
+    </item>
+    
+  </channel>
+</rss>

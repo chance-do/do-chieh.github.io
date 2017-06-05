@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on Chieh Blog</title>
+    <link>http://do-chieh.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on Chieh Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 28 Jul 2016 14:54:40 +0000</lastBuildDate>
+    
+	<atom:link href="http://do-chieh.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据交换格式——json</title>
+      <link>http://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</link>
+      <pubDate>Thu, 28 Jul 2016 14:54:40 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</guid>
+      <description>Json(JavaScript Object Notation)作为轻量级的文本数据交换格式，他的语法是JavaScript语法的子集。与xml不同的是，并不需要解释器，可使用eval()内建函数。
+优点  数据格式简单，便于读写，占用带宽小 易于解析，不需要解释器，易于维护 支持语言多，便于前台对数据的提取 缺点 太年轻，通用性相对较差
+  语法规则 名/值 对存储数据 : 表示映射 { } 表示对象,映射数据的集合 表示数组,并列数据的集合 可以有多层级
+  在Ubuntu科学上网一文中的配置文件用的就是Json格式，下面还是举个例子。
+var pen = { &amp;quot;classify&amp;quot; : &amp;quot;stationery&amp;quot;, &amp;quot;price&amp;quot; : &amp;quot;10&amp;quot;, &amp;quot;property&amp;quot; : [ { &amp;quot;id&amp;quot; : &amp;quot;1100&amp;quot; , &amp;quot;weight&amp;quot; : &amp;quot;20&amp;quot; , &amp;quot;legth&amp;quot; : &amp;quot;12&amp;quot;, &amp;quot;colors&amp;quot; :[&amp;quot;black&amp;quot;,&amp;quot;blue&amp;quot;] }, { &amp;quot;id&amp;quot; : &amp;quot;1101&amp;quot; , &amp;quot;weight&amp;quot; : &amp;quot;18&amp;quot; , &amp;quot;legth&amp;quot; : &amp;quot;11.80&amp;quot;, &amp;quot;colors&amp;quot; :[&amp;quot;black&amp;quot;,&amp;quot;red&amp;quot;,&amp;quot;blue&amp;quot;] }, { &amp;quot;id&amp;quot; : &amp;quot;1102&amp;quot; , &amp;quot;weight&amp;quot; : &amp;quot;22&amp;quot; , &amp;quot;legth&amp;quot; : &amp;quot;13.</description>
+    </item>
+    
+    <item>
+      <title>Apache Drill环境部署</title>
+      <link>http://do-chieh.github.io/post/2016/2016-04-11-drill%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2016/2016-04-11-drill%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</guid>
+      <description>服务器环境查看：
+$ lsb_release -a Distributor ID: Ubuntu Description: Ubuntu 14.04.4 LTS Release: 14.04  Codename: trusty $ uname -i x86_64  安装node.js环境：
+$ wget https://nodejs.org/dist/v4.4.2/node-v4.4.2.tar.gz $ tar -zxvf node-v4.4.2.tar.gz #最新稳定版 $ cd node-v4.4.2/ $ ./configure &amp;amp;&amp;amp; make $ sudo make install $ node -v #查看已安装版本 v4.4.2  安装Mangodb
+$ wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.2.4.tgz 2nd line 3rd line  $ tar -zxvf mongodb-linux-x86_64-ubuntu1404-3.2.4.tgz $ cd mongodb &amp;amp;&amp;amp; mkdir data &amp;amp;&amp;amp; mkdir log &amp;amp;&amp;amp; touch log/mongodb.</description>
+    </item>
+    
+    <item>
+      <title>Ralink SDK Package 集成</title>
+      <link>http://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</link>
+      <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</guid>
+      <description>目标：将一个c文件集成到Ralink SDK的固件中
+已知一个sysmonitor.c用于系统监控，检测cpu，ram等指标，并将系统运行信息转为json格式，回传到服务器。
+$ ls $ sysmonitor.c  把要集成的程序移动到相应位置
+$ mkdir /src/user/sysmonitor $ mv sysmonitor.c /src/user/sysmonitor/ $ cd /src/user/sysmonitor  现在需要在目录下编写简单的Makefile
+$ pwd $ /src/user/sysmonitor $ vi Makefile  下面给出Makefile示例
+EXE = sysmonitor OBJS = sysmonitor.o CFLAGS += -I$(ROOTDIR)/$(LINUXDIR)/include all: $(EXE) $(EXE) : $(OBJS) $(CC) $(LDFLAGS) -o $@ $(OBJS) $(LDLIBS) romfs: $(ROMFSINST) /bin/$(EXE) clean: @rm -f sysmonitor *.o  检验makefile的正确性
+$ make cc -I//include -c -o sysmonitor.o sysmonitor.c cc -o sysmonitor sysmonitor.</description>
+    </item>
+    
+    <item>
+      <title>MySQL学习</title>
+      <link>http://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</guid>
+      <description>Install MySQL  可在安装过程中初始化root密码
+  $ sudo apt-get install mysql-server
+$ sudo apt-get install masql-client
+ 检查安装成功   $ sudo netstat -tap | grep mysql
+ 启动并连接mysql
+  $ sudo service mysql start
+$ mysql -u root -p #根据要求输入初始化密码
+$ mysql -u root #若未初始化密码
+数据库  查看有所有数据库
+  $ show databases;
+ 连接数据库
+  $ use databasename
+ 查看某数据库中的表
+  $ show tables;</description>
+    </item>
+    
+    <item>
+      <title>嵌入式Linux NTP服务配置</title>
+      <link>http://do-chieh.github.io/post/2016/2016-03-07-linux_ntp%E6%9C%8D%E5%8A%A1%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2016/2016-03-07-linux_ntp%E6%9C%8D%E5%8A%A1%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <description>NTP服务(Network Time Protocal) NTP是用来同步网络中所有计算机时间的协议，精度1-50ms。时间按NTP服务器的等级传播，按照距离UTC源的距离把所有服务器归入不同的层中，服务成功运行后，可使用date命令查看验证。
+  ntpclient用法
+Usage: ntpclient [options] options: -c count stop after count time measurements (default 0 means go forever) -d print diagnostics (feature can be disabled at compile time) -g goodness causes ntpclient to stop after getting a result more accurate than goodness (microseconds, default 0 means go forever) -h hostname (mandatory) NTP server host, against which to measure system time -i interval check time every interval seconds (default 600) -l attempt to lock local clock to server using adjtimex(2) -p port local NTP client UDP port (default 0 means &amp;ldquo;any available&amp;rdquo;) -r replay analysis code based on stdin -s simple clock set (implies -c 1)</description>
+    </item>
+    
+    <item>
+      <title>ubuntu错误集锦</title>
+      <link>http://do-chieh.github.io/post/2015/2015-01-02-ubuntu%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2015/2015-01-02-ubuntu%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E9%94%99%E8%AF%AF/</guid>
+      <description>ubuntu系统下常见错误，不定时更新
+ 软件更新签名错误 sudo apt-get update W: GPG 错误：http://archive.ubuntukylin.com:10006 xenial InRelease: 由于没有公钥，无法验证下列签名： NO_PUBKEY C2518248EEA14886 //解决方法: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C2518248EEA14886  name</description>
+    </item>
+    
+  </channel>
+</rss>

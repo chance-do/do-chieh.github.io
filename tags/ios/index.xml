@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ios on Chieh Blog</title>
+    <link>http://do-chieh.github.io/tags/ios/</link>
+    <description>Recent content in Ios on Chieh Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 08 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://do-chieh.github.io/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Protocol Buffer Objerctive-C Compiler(protoc)</title>
+      <link>http://do-chieh.github.io/post/2017/1704-protobuf-objc/</link>
+      <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2017/1704-protobuf-objc/</guid>
+      <description>什么是Protocol buffers?  Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data.
+ Protocol buffers 是一种以有效且可扩展的格式对结构化数据进行编码的方式。它和xml类似，但是比xml更轻量，更快速，更简单。
+你可以定义自己想要的结构化数据，然后可以使用特殊的生成源代码轻松地将结构化数据写入和读取各种数据流并使用各种语言。
+Protocol buffers项目的主页在这里。
+开发指南在这里。
+Objective-C Protocol Buffers 实现需要以下环境:
+ Objective C 2.0 Runtime (32bit &amp;amp; 64bit iOS, 64bit OS X). Xcode 7.0 (or later). 出于性能考虑，代码没有使用ARC。  安装 Protobuf 可以通过brew和source code 两种方式安装。
+在这里，我推荐使用源代码安装。到这里选择发行的版本。 我选择安装的是3.2版本，与公司项目中使用的2.0+版本有很大的区别。
+protobuf的安装依赖automake,libtool。确保它们在系统中存在。
+brew install automake brew install libtool  homebrew可以到这里找到如何安装。
+将压缩包解压到指定的安装目录，开始编译protoc：
+cd &amp;lt;install_directory&amp;gt; ./autogen.sh ./configure make  如果运行没有错误的话，protoc将会出现在 &amp;lt;install_directory&amp;gt;/src 中。</description>
+    </item>
+    
+  </channel>
+</rss>

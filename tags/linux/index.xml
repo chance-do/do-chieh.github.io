@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Chieh Blog</title>
+    <link>http://do-chieh.github.io/tags/linux/</link>
+    <description>Recent content in Linux on Chieh Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 07 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://do-chieh.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>嵌入式Linux NTP服务配置</title>
+      <link>http://do-chieh.github.io/post/2016/2016-03-07-linux_ntp%E6%9C%8D%E5%8A%A1%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2016/2016-03-07-linux_ntp%E6%9C%8D%E5%8A%A1%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <description>NTP服务(Network Time Protocal) NTP是用来同步网络中所有计算机时间的协议，精度1-50ms。时间按NTP服务器的等级传播，按照距离UTC源的距离把所有服务器归入不同的层中，服务成功运行后，可使用date命令查看验证。
+  ntpclient用法
+Usage: ntpclient [options] options: -c count stop after count time measurements (default 0 means go forever) -d print diagnostics (feature can be disabled at compile time) -g goodness causes ntpclient to stop after getting a result more accurate than goodness (microseconds, default 0 means go forever) -h hostname (mandatory) NTP server host, against which to measure system time -i interval check time every interval seconds (default 600) -l attempt to lock local clock to server using adjtimex(2) -p port local NTP client UDP port (default 0 means &amp;ldquo;any available&amp;rdquo;) -r replay analysis code based on stdin -s simple clock set (implies -c 1)</description>
+    </item>
+    
+    <item>
+      <title>Linux下的软件管理</title>
+      <link>http://do-chieh.github.io/post/2015/2015-04-30-linux%E4%B8%8B%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Thu, 30 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2015/2015-04-30-linux%E4%B8%8B%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
+      <description>软件包分类 源码包  开源，修改源码，选择功能，定制软件
+ 稳定，效率高，卸载方便
+ 安装步骤多，容易出错，耗时长
+  二进制包 - 包管理简单，速度快 - 闭源，效率低 - 依赖性  RPM包 命名规则 例如: heart-2.1.4-12.el6.x86_64.rpm  依赖性  树形依赖： a-&amp;gt;b-&amp;gt;c 环形依赖： a-&amp;gt;b-&amp;gt;c-&amp;gt;a 模块依赖： http:www.rpmfind.net  rpm命令管理 - 包名：未曾安装，使用`包全名`及路径；已安装，使用`包名`(/var/lib/rpm/) - 命令：rpm -ivh [package full name] -i(install) //安装 -v(verbose) //详细信息 -h(hash) //进度 -Uvh(upgrade) //升级 -e(erase) //卸载 -p(package) //查看未安装的包 -qa(query，all) //是否安装 -qip //包的信息 -ql //包安装位置 -qf //查询文件属于哪个包 -qR //查看依赖  安装路径 |路径|文件类型|
+|:&amp;mdash;&amp;ndash;|&amp;mdash;&amp;mdash;:|
+|/etc/|配置文件|
+|/usr/bin|可执行命令|</description>
+    </item>
+    
+    <item>
+      <title>计划任务Crontab</title>
+      <link>http://do-chieh.github.io/post/2015/2015-04-28-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1crontab/</link>
+      <pubDate>Tue, 28 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2015/2015-04-28-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1crontab/</guid>
+      <description>在Linux下经常会做一些有时间规律的行为，尤其是在运维方面。都是重复性的工作，手动操作显得过于繁琐，Crontab很好的解决了这个问题。
+ Crontab简介 Crontab是一个用于设置周期性被执行的任务工具。
+Cron Job:被周期性执行的任务 Cron table:被周期性执行的执行列表
+通常系统中会运行一个cron/crond的服务，用于更新计划任务列表及执行计划任务，cron服务每分钟都会从配置文件(/etc/contab)更新一次。
+配置文件:
+- 格式： * * * * [user] cmd
+- 载入文件： crontab filename //将文件导入到crontab，开机以此为准
+用法命令：  crontab --help usage: crontab [-u user] file crontab [ -u user ] [ -i ] { -e | -l | -r } (default operation is replace, per 1003.2) -e (edit user&#39;s crontab) -l (list user&#39;s crontab) -r (delete user&#39;s crontab) -i (prompt before deleting user&#39;s crontab)  配置规则 | * | * | * | * | * |user|cmd|</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu服务器常用配置</title>
+      <link>http://do-chieh.github.io/post/2015/2015-04-17-ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2015/2015-04-17-ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <description>很多时候由于需要总要配置很多次ubuntu server，每次装机完成后又会例行同样的事，这里进行简要总结。
+ 网络配置 服务重启生效sudo /etc/init.d/network restart
+添加dns 文件位于/etc/network/interfaces，在指定网卡下面添加以下语句：
+dns-nameservers 180.76.76.76 //百度dns  常用ip添加至host文件 sudo vi /etc/hosts 192.168.1.192 gitserver 192.168.1.195 vtmachine  配置静态ip auto eth0 iface eth0 inet static address 192.168.1.117 gateway 192.168.1.1 netmask 255.255.255.0 network 192.168.1.0 broadcast 192.168.1.255  软件更新及常见配置 更新源文件 以下源属于阿里云源，国内高效率必备。
+chieh@Userver:~$ cat /etc/apt/sources.list deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse deb http://mirrors.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu下科学上网</title>
+      <link>http://do-chieh.github.io/post/2015/2015-04-06-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+      <pubDate>Mon, 06 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2015/2015-04-06-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+      <description>科学上网是永恒的话题，windows下较为简单直白 ,下载安装客户端就可以了。由于工作学习原因，长期处于linux下，为了能方便也配置了科学上网，测试环境Ubuntu 14.04 64 bit。
+ ShadowSocks科学上网 ShadowSocks简称ss，是由Python开发的socks5代理软件，后来由于某些原因作者不再维护这个项目， Github上的源码已经被删除。使用这种方式爬墙需要配合ss账号购买
+基础部分 ：ss安装配置运行及开机启动 1. 安装shadowsocks客户端 sudo apt-get install python-pip sudo pip install shadowsocks  2. 编写配置文件(json格式) sudo vi /etc/shadowsocks.json { &amp;quot;server&amp;quot;:&amp;quot;hk.hello.com&amp;quot;, //节点线路地址，ip地址也可以 &amp;quot;server_port&amp;quot;:12345, //购买的ss端口 &amp;quot;local_address&amp;quot;:&amp;quot;127.0.0.1&amp;quot;, //默认 此处无需修改 &amp;quot;local_port&amp;quot;:1080, //此处可自定义，推荐1080，本地代理端口 &amp;quot;password&amp;quot;:&amp;quot;abc@123&amp;quot;, //购买的ss密码 &amp;quot;timeout&amp;quot;:300, //默认 可更改，访问超时时间 &amp;quot;method&amp;quot;:&amp;quot;aes-128-cfb&amp;quot;, //所选线路对应的加密方式 &amp;quot;fast_open&amp;quot;:false:false //默认 }  3. 运行ss sslocal -c /etc/shadowsocks.json INFO: loading config from /etc/shadowsocks.json 2015-02-17 00:00:22 INFO loading libcrypto from libcrypto.so.1.0.0 2015-02-17 00:00:22 INFO starting local at 127.</description>
+    </item>
+    
+    <item>
+      <title>ubuntu错误集锦</title>
+      <link>http://do-chieh.github.io/post/2015/2015-01-02-ubuntu%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2015/2015-01-02-ubuntu%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E9%94%99%E8%AF%AF/</guid>
+      <description>ubuntu系统下常见错误，不定时更新
+ 软件更新签名错误 sudo apt-get update W: GPG 错误：http://archive.ubuntukylin.com:10006 xenial InRelease: 由于没有公钥，无法验证下列签名： NO_PUBKEY C2518248EEA14886 //解决方法: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C2518248EEA14886  name</description>
+    </item>
+    
+  </channel>
+</rss>
