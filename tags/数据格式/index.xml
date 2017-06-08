@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据格式 on Chieh Blog</title>
-    <link>https://do-chieh.github.io/tags/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/</link>
+    <link>http://do-chieh.github.io/tags/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/</link>
     <description>Recent content in 数据格式 on Chieh Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 28 Jul 2016 14:54:40 +0000</lastBuildDate>
     
-	<atom:link href="https://do-chieh.github.io/tags/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://do-chieh.github.io/tags/%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>数据交换格式——json</title>
-      <link>https://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</link>
+      <link>http://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</link>
       <pubDate>Thu, 28 Jul 2016 14:54:40 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</guid>
+      <guid>http://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</guid>
       <description>Json(JavaScript Object Notation)作为轻量级的文本数据交换格式，他的语法是JavaScript语法的子集。与xml不同的是，并不需要解释器，可使用eval()内建函数。
 优点  数据格式简单，便于读写，占用带宽小 易于解析，不需要解释器，易于维护 支持语言多，便于前台对数据的提取 缺点 太年轻，通用性相对较差
   语法规则 名/值 对存储数据 : 表示映射 { } 表示对象,映射数据的集合 表示数组,并列数据的集合 可以有多层级

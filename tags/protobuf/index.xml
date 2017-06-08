@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Protobuf on Chieh Blog</title>
-    <link>https://do-chieh.github.io/tags/protobuf/</link>
+    <link>http://do-chieh.github.io/tags/protobuf/</link>
     <description>Recent content in Protobuf on Chieh Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 08 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://do-chieh.github.io/tags/protobuf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://do-chieh.github.io/tags/protobuf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Protocol Buffer Objerctive-C Compiler(protoc)</title>
-      <link>https://do-chieh.github.io/post/2017/1704-protobuf-objc/</link>
+      <link>http://do-chieh.github.io/post/2017/1704-protobuf-objc/</link>
       <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2017/1704-protobuf-objc/</guid>
+      <guid>http://do-chieh.github.io/post/2017/1704-protobuf-objc/</guid>
       <description>什么是Protocol buffers?  Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data.
  Protocol buffers 是一种以有效且可扩展的格式对结构化数据进行编码的方式。它和xml类似，但是比xml更轻量，更快速，更简单。
 你可以定义自己想要的结构化数据，然后可以使用特殊的生成源代码轻松地将结构化数据写入和读取各种数据流并使用各种语言。

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>音乐 on Chieh Blog</title>
-    <link>https://do-chieh.github.io/tags/%E9%9F%B3%E4%B9%90/</link>
+    <link>http://do-chieh.github.io/tags/%E9%9F%B3%E4%B9%90/</link>
     <description>Recent content in 音乐 on Chieh Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 11 Sep 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://do-chieh.github.io/tags/%E9%9F%B3%E4%B9%90/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://do-chieh.github.io/tags/%E9%9F%B3%E4%B9%90/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>推荐一首歌:富士山下</title>
-      <link>https://do-chieh.github.io/post/2016/1609-start/</link>
+      <link>http://do-chieh.github.io/post/2016/1609-start/</link>
       <pubDate>Sun, 11 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2016/1609-start/</guid>
+      <guid>http://do-chieh.github.io/post/2016/1609-start/</guid>
       <description>歌名：富士山下
  </description>
     </item>

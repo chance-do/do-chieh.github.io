@@ -2,41 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Chieh Blog</title>
-    <link>https://do-chieh.github.io/post/</link>
+    <link>http://do-chieh.github.io/post/</link>
     <description>Recent content in Posts on Chieh Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 08 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Oct 2016 15:58:42 +0000</lastBuildDate>
     
-	<atom:link href="https://do-chieh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://do-chieh.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Protocol Buffer Objerctive-C Compiler(protoc)</title>
-      <link>https://do-chieh.github.io/post/2017/1704-protobuf-objc/</link>
-      <pubDate>Sat, 08 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://do-chieh.github.io/post/2017/1704-protobuf-objc/</guid>
-      <description>什么是Protocol buffers?  Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data.
- Protocol buffers 是一种以有效且可扩展的格式对结构化数据进行编码的方式。它和xml类似，但是比xml更轻量，更快速，更简单。
-你可以定义自己想要的结构化数据，然后可以使用特殊的生成源代码轻松地将结构化数据写入和读取各种数据流并使用各种语言。
-Protocol buffers项目的主页在这里。
-开发指南在这里。
-Objective-C Protocol Buffers 实现需要以下环境:
- Objective C 2.0 Runtime (32bit &amp;amp; 64bit iOS, 64bit OS X). Xcode 7.0 (or later). 出于性能考虑，代码没有使用ARC。  安装 Protobuf 可以通过brew和source code 两种方式安装。
-在这里，我推荐使用源代码安装。到这里选择发行的版本。 我选择安装的是3.2版本，与公司项目中使用的2.0+版本有很大的区别。
-protobuf的安装依赖automake,libtool。确保它们在系统中存在。
-brew install automake brew install libtool  homebrew可以到这里找到如何安装。
-将压缩包解压到指定的安装目录，开始编译protoc：
-cd &amp;lt;install_directory&amp;gt; ./autogen.sh ./configure make  如果运行没有错误的话，protoc将会出现在 &amp;lt;install_directory&amp;gt;/src 中。</description>
-    </item>
     
     <item>
       <title>Hexo常用的内置标签记录</title>
-      <link>https://do-chieh.github.io/post/2016/1610-hexo-tag/</link>
+      <link>http://do-chieh.github.io/post/2016/1610-hexo-tag/</link>
       <pubDate>Sat, 15 Oct 2016 15:58:42 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2016/1610-hexo-tag/</guid>
+      <guid>http://do-chieh.github.io/post/2016/1610-hexo-tag/</guid>
       <description>Hexo 标签 「标签」(Tag Plugin) 是 Hexo 提供的一种快速生成特定内容的方式。 在标准 Markdown 中，我们无法指定图片的大小，在这种情景下，我们即可使用标签来解决。 Hexo 内置来许多标签来帮助写作者可以更快的书写， 完整的标签列表 可以参考 Hexo 官网。
 文本居中的引用 此标签将生成一个带上下分割线的引用，同时引用内文本将自动居中。 文本居中时，多行文本若长度不等，视觉上会显得不对称，因此建议在引用单行文本的场景下使用。 例如作为文章开篇引用 或者 结束语之前的总结引用。
 使用方式  HTML方式：使用这种方式时，给 img 添加属性 class=&amp;ldquo;blockquote-center&amp;rdquo; 即可。 标签方式：使用 centerquote 或者 简写 cq。 此标签要求 NexT 的版本在 0.4.5 或以上。 若你正在使用的版本比较低，可以选择使用 HTML 方式。  标调用方法签 ** HTML方式 ** 如若你非我不嫁 彼此终必火化 一生一世等一天需要代价 
@@ -45,35 +25,11 @@ cd &amp;lt;install_directory&amp;gt; ./autogen.sh ./configure make  如果运行
     </item>
     
     <item>
-      <title>使用hexo写作</title>
-      <link>https://do-chieh.github.io/post/2016/1610-hexo/</link>
-      <pubDate>Sun, 02 Oct 2016 16:23:11 +0000</pubDate>
-      
-      <guid>https://do-chieh.github.io/post/2016/1610-hexo/</guid>
-      <description>新建文章 $ hexo new [layout] &amp;lt;title&amp;gt;  布局（Layout） Hexo 的三种默认布局：post、page、draft, 可以通过 _config.yml中的default_layout 来指定默认布局。它们分别对应不同的路径，如果自定义了布局，将与post相同， 存储在 source/_posts 文件夹。
-   布局 路径     post source/_posts   page source   draft source/_drafts    添加分类目录 hexo new page &amp;quot;categories&amp;quot;  这时会在source下生成目录categories，里面有个index.md文件
-编辑index.md，设置type 值为 categories
-title: categories date: 2016-12-09 15:59:21 type: &amp;quot;categories&amp;quot; comments: false  这样页面就会显示所有的分类了。
-添加 tags 页面 tags同categories 设置, 将type 改为tags即可。
-草稿 新建的文章默认使用 post 布局，如果不想立即发布文章可以先存草稿，这时候文件将会被保存在 source/_drafts中，</description>
-    </item>
-    
-    <item>
-      <title>推荐一首歌:富士山下</title>
-      <link>https://do-chieh.github.io/post/2016/1609-start/</link>
-      <pubDate>Sun, 11 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://do-chieh.github.io/post/2016/1609-start/</guid>
-      <description>歌名：富士山下
- </description>
-    </item>
-    
-    <item>
       <title>数据交换格式——json</title>
-      <link>https://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</link>
+      <link>http://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</link>
       <pubDate>Thu, 28 Jul 2016 14:54:40 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</guid>
+      <guid>http://do-chieh.github.io/post/2016/2016-07-28-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%A0%BC%E5%BC%8Fjson/</guid>
       <description>Json(JavaScript Object Notation)作为轻量级的文本数据交换格式，他的语法是JavaScript语法的子集。与xml不同的是，并不需要解释器，可使用eval()内建函数。
 优点  数据格式简单，便于读写，占用带宽小 易于解析，不需要解释器，易于维护 支持语言多，便于前台对数据的提取 缺点 太年轻，通用性相对较差
   语法规则 名/值 对存储数据 : 表示映射 { } 表示对象,映射数据的集合 表示数组,并列数据的集合 可以有多层级
@@ -83,19 +39,19 @@ var pen = { &amp;quot;classify&amp;quot; : &amp;quot;stationery&amp;quot;, &amp;
     
     <item>
       <title>编程书单</title>
-      <link>https://do-chieh.github.io/post/2016/2016-04-28-%E7%BC%96%E7%A8%8B%E4%B9%A6%E7%B1%8D/</link>
+      <link>http://do-chieh.github.io/post/2016/2016-04-28-%E7%BC%96%E7%A8%8B%E4%B9%A6%E7%B1%8D/</link>
       <pubDate>Thu, 28 Apr 2016 14:54:40 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2016/2016-04-28-%E7%BC%96%E7%A8%8B%E4%B9%A6%E7%B1%8D/</guid>
+      <guid>http://do-chieh.github.io/post/2016/2016-04-28-%E7%BC%96%E7%A8%8B%E4%B9%A6%E7%B1%8D/</guid>
       <description>语言无关  MySQL NoSQL PostgreSQL Web  WEB服务器 其它 函数式概念 分布式系统 在线教育 大数据 操作系统 数据库 智能系统 正则表达式 版本控制 程序员杂谈 管理和监控 编程艺术 编译原理 编辑器 计算机图形学 设计模式 软件开发方法 项目相关  语言相关  Android AWK C/C++ CoffeeScript Dart Elasticsearch Erlang Fortran Golang Haskell HTML / CSS HTTP iOS Java JavaScript LaTeX LISP Lua Markdown Node.js Perl PHP Python R reStructuredText Ruby Scala Scheme Shell Swift Vim Visual Prolog   语言无关 MySQL  21分钟MySQL入门教程 MySQL索引背后的数据结构及算法原理  NoSQL  Disque 使用教程 Neo4j .</description>
     </item>
     
     <item>
       <title>Apache Drill环境部署</title>
-      <link>https://do-chieh.github.io/post/2016/2016-04-11-drill%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</link>
+      <link>http://do-chieh.github.io/post/2016/2016-04-11-drill%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2016/2016-04-11-drill%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</guid>
+      <guid>http://do-chieh.github.io/post/2016/2016-04-11-drill%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</guid>
       <description>服务器环境查看：
 $ lsb_release -a Distributor ID: Ubuntu Description: Ubuntu 14.04.4 LTS Release: 14.04  Codename: trusty $ uname -i x86_64  安装node.js环境：
 $ wget https://nodejs.org/dist/v4.4.2/node-v4.4.2.tar.gz $ tar -zxvf node-v4.4.2.tar.gz #最新稳定版 $ cd node-v4.4.2/ $ ./configure &amp;amp;&amp;amp; make $ sudo make install $ node -v #查看已安装版本 v4.4.2  安装Mangodb
@@ -104,10 +60,10 @@ $ wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.2.4.tg
     
     <item>
       <title>Ralink SDK Package 集成</title>
-      <link>https://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</link>
+      <link>http://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</link>
       <pubDate>Thu, 07 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</guid>
+      <guid>http://do-chieh.github.io/post/2016/2016-04-07-ralink_sdk_dev/</guid>
       <description>目标：将一个c文件集成到Ralink SDK的固件中
 已知一个sysmonitor.c用于系统监控，检测cpu，ram等指标，并将系统运行信息转为json格式，回传到服务器。
 $ ls $ sysmonitor.c  把要集成的程序移动到相应位置
@@ -119,10 +75,10 @@ $ make cc -I//include -c -o sysmonitor.o sysmonitor.c cc -o sysmonitor sysmonito
     
     <item>
       <title>MySQL学习</title>
-      <link>https://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</link>
+      <link>http://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>http://do-chieh.github.io/post/2016/2016-03-31-mysql%E5%AD%A6%E4%B9%A0/</guid>
       <description>Install MySQL  可在安装过程中初始化root密码
   $ sudo apt-get install mysql-server
 $ sudo apt-get install masql-client
@@ -141,10 +97,10 @@ $ mysql -u root #若未初始化密码
     
     <item>
       <title>嵌入式Linux NTP服务配置</title>
-      <link>https://do-chieh.github.io/post/2016/2016-03-07-linux_ntp%E6%9C%8D%E5%8A%A1%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <link>http://do-chieh.github.io/post/2016/2016-03-07-linux_ntp%E6%9C%8D%E5%8A%A1%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2016/2016-03-07-linux_ntp%E6%9C%8D%E5%8A%A1%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://do-chieh.github.io/post/2016/2016-03-07-linux_ntp%E6%9C%8D%E5%8A%A1%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>NTP服务(Network Time Protocal) NTP是用来同步网络中所有计算机时间的协议，精度1-50ms。时间按NTP服务器的等级传播，按照距离UTC源的距离把所有服务器归入不同的层中，服务成功运行后，可使用date命令查看验证。
   ntpclient用法
 Usage: ntpclient [options] options: -c count stop after count time measurements (default 0 means go forever) -d print diagnostics (feature can be disabled at compile time) -g goodness causes ntpclient to stop after getting a result more accurate than goodness (microseconds, default 0 means go forever) -h hostname (mandatory) NTP server host, against which to measure system time -i interval check time every interval seconds (default 600) -l attempt to lock local clock to server using adjtimex(2) -p port local NTP client UDP port (default 0 means &amp;ldquo;any available&amp;rdquo;) -r replay analysis code based on stdin -s simple clock set (implies -c 1)</description>
@@ -152,10 +108,10 @@ Usage: ntpclient [options] options: -c count stop after count time measurements 
     
     <item>
       <title>Linux下的软件管理</title>
-      <link>https://do-chieh.github.io/post/2015/2015-04-30-linux%E4%B8%8B%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
+      <link>http://do-chieh.github.io/post/2015/2015-04-30-linux%E4%B8%8B%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
       <pubDate>Thu, 30 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2015/2015-04-30-linux%E4%B8%8B%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
+      <guid>http://do-chieh.github.io/post/2015/2015-04-30-linux%E4%B8%8B%E7%9A%84%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
       <description>软件包分类 源码包  开源，修改源码，选择功能，定制软件
  稳定，效率高，卸载方便
  安装步骤多，容易出错，耗时长
@@ -167,10 +123,10 @@ Usage: ntpclient [options] options: -c count stop after count time measurements 
     
     <item>
       <title>计划任务Crontab</title>
-      <link>https://do-chieh.github.io/post/2015/2015-04-28-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1crontab/</link>
+      <link>http://do-chieh.github.io/post/2015/2015-04-28-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1crontab/</link>
       <pubDate>Tue, 28 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2015/2015-04-28-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1crontab/</guid>
+      <guid>http://do-chieh.github.io/post/2015/2015-04-28-%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1crontab/</guid>
       <description>在Linux下经常会做一些有时间规律的行为，尤其是在运维方面。都是重复性的工作，手动操作显得过于繁琐，Crontab很好的解决了这个问题。
  Crontab简介 Crontab是一个用于设置周期性被执行的任务工具。
 Cron Job:被周期性执行的任务 Cron table:被周期性执行的执行列表
@@ -183,10 +139,10 @@ Cron Job:被周期性执行的任务 Cron table:被周期性执行的执行列�
     
     <item>
       <title>Ubuntu服务器常用配置</title>
-      <link>https://do-chieh.github.io/post/2015/2015-04-17-ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <link>http://do-chieh.github.io/post/2015/2015-04-17-ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2015/2015-04-17-ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://do-chieh.github.io/post/2015/2015-04-17-ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>很多时候由于需要总要配置很多次ubuntu server，每次装机完成后又会例行同样的事，这里进行简要总结。
  网络配置 服务重启生效sudo /etc/init.d/network restart
 添加dns 文件位于/etc/network/interfaces，在指定网卡下面添加以下语句：
@@ -196,10 +152,10 @@ chieh@Userver:~$ cat /etc/apt/sources.list deb http://mirrors.aliyun.com/ubuntu/
     
     <item>
       <title>Ubuntu下科学上网</title>
-      <link>https://do-chieh.github.io/post/2015/2015-04-06-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+      <link>http://do-chieh.github.io/post/2015/2015-04-06-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
       <pubDate>Mon, 06 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2015/2015-04-06-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+      <guid>http://do-chieh.github.io/post/2015/2015-04-06-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
       <description>科学上网是永恒的话题，windows下较为简单直白 ,下载安装客户端就可以了。由于工作学习原因，长期处于linux下，为了能方便也配置了科学上网，测试环境Ubuntu 14.04 64 bit。
  ShadowSocks科学上网 ShadowSocks简称ss，是由Python开发的socks5代理软件，后来由于某些原因作者不再维护这个项目， Github上的源码已经被删除。使用这种方式爬墙需要配合ss账号购买
 基础部分 ：ss安装配置运行及开机启动 1. 安装shadowsocks客户端 sudo apt-get install python-pip sudo pip install shadowsocks  2. 编写配置文件(json格式) sudo vi /etc/shadowsocks.json { &amp;quot;server&amp;quot;:&amp;quot;hk.hello.com&amp;quot;, //节点线路地址，ip地址也可以 &amp;quot;server_port&amp;quot;:12345, //购买的ss端口 &amp;quot;local_address&amp;quot;:&amp;quot;127.0.0.1&amp;quot;, //默认 此处无需修改 &amp;quot;local_port&amp;quot;:1080, //此处可自定义，推荐1080，本地代理端口 &amp;quot;password&amp;quot;:&amp;quot;abc@123&amp;quot;, //购买的ss密码 &amp;quot;timeout&amp;quot;:300, //默认 可更改，访问超时时间 &amp;quot;method&amp;quot;:&amp;quot;aes-128-cfb&amp;quot;, //所选线路对应的加密方式 &amp;quot;fast_open&amp;quot;:false:false //默认 }  3. 运行ss sslocal -c /etc/shadowsocks.json INFO: loading config from /etc/shadowsocks.json 2015-02-17 00:00:22 INFO loading libcrypto from libcrypto.so.1.0.0 2015-02-17 00:00:22 INFO starting local at 127.</description>
@@ -207,10 +163,10 @@ chieh@Userver:~$ cat /etc/apt/sources.list deb http://mirrors.aliyun.com/ubuntu/
     
     <item>
       <title>ubuntu错误集锦</title>
-      <link>https://do-chieh.github.io/post/2015/2015-01-02-ubuntu%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E9%94%99%E8%AF%AF/</link>
+      <link>http://do-chieh.github.io/post/2015/2015-01-02-ubuntu%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E9%94%99%E8%AF%AF/</link>
       <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://do-chieh.github.io/post/2015/2015-01-02-ubuntu%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E9%94%99%E8%AF%AF/</guid>
+      <guid>http://do-chieh.github.io/post/2015/2015-01-02-ubuntu%E8%BD%AF%E4%BB%B6%E6%9B%B4%E6%96%B0%E9%94%99%E8%AF%AF/</guid>
       <description>ubuntu系统下常见错误，不定时更新
  软件更新签名错误 sudo apt-get update W: GPG 错误：http://archive.ubuntukylin.com:10006 xenial InRelease: 由于没有公钥，无法验证下列签名： NO_PUBKEY C2518248EEA14886 //解决方法: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C2518248EEA14886  name</description>
     </item>
