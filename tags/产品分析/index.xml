@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>产品分析 on Chieh Blog</title>
+    <link>http://do-chieh.github.io/tags/%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/</link>
+    <description>Recent content in 产品分析 on Chieh Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 14 Jun 2017 17:51:20 +0800</lastBuildDate>
+    
+	<atom:link href="http://do-chieh.github.io/tags/%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>携程产品分析报告</title>
+      <link>http://do-chieh.github.io/post/2017-06-14-xiecheng_analysis/</link>
+      <pubDate>Wed, 14 Jun 2017 17:51:20 +0800</pubDate>
+      
+      <guid>http://do-chieh.github.io/post/2017-06-14-xiecheng_analysis/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
